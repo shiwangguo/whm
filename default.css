@@ -12,7 +12,8 @@ body {
 }
 
 #loveHeart {
-    margin-top: 100px;
+    position: absolute;
+    top: 1600px;
 	width: 1900px;
 	height: 625px
 }
