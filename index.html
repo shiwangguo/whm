@@ -81,16 +81,16 @@
         $("#copyright").css("bottom", "10px");
         document.execCommand("stop");
     } else {
-        setTimeout(function () {
+       /* setTimeout(function () {
             startHeartAnimation();
-        }, 32000);
+        }, 32000);*/
 
         timeElapse(together);
         setInterval(function () {
            timeElapse(together);
         }, 500);
 
-        adjustCodePosition();
+        //adjustCodePosition();
         $("#code").typewriter();
     }
 </script>
