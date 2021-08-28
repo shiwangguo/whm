@@ -13,7 +13,7 @@ body {
 
 #loveHeart {
     position: absolute;
-    top: 700px;
+    top: 590px;
 	width: 1200px;
 	height: 625px
 }
@@ -36,7 +36,8 @@ body {
 	font-family: "sans-serif";
 	width: 1900px;
 	font-size: 40px;
-	color: #666
+	color: #666;
+    margin-left: 185px;
 }
 
 #messages {
