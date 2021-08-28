@@ -117,6 +117,19 @@
         }
         audioAutoPlay();
     });
+
+
+    var u = navigator.userAgent;
+    //判断是否是ios终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    //判断是否是android终端
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    //判断是否是微信
+    var ua = window.navigator.userAgent.toLowerCase();
+    ua.match(/MicroMessenger/i) == 'micromessenger';
+    if(isAndroid){
+        $("#loveHeart").css("top", "700px");
+    }
 </script>
 </body>
 </html>
