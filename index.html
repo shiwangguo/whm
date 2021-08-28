@@ -128,20 +128,12 @@
     var ua = window.navigator.userAgent.toLowerCase();
     ua.match(/MicroMessenger/i) == 'micromessenger';
     if(isAndroid){
-        $("#loveHeart").css("top", "1620px");
-        $("#loveHeart").css("width", "1900px");
-
-        $("#elapseClock").css("text-align", "center");
-        $("#elapseClock").css("font-size", "80px");
-
-        $("#words").css("font-size", "80px");
-        $("#words").css("margin-left", "0px");
-
-        $(".digit").css("font-size", "80px");
-
-
-        $(".comments").css("font-size", "70px");
+        //$("#loveHeart").css("top", "1620px");
+        $("link").attr("href","default1.css");
+        $("head").append("<link>");
     }
+
+
 </script>
 </body>
 </html>
