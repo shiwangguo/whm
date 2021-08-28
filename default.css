@@ -24,16 +24,18 @@ body {
 }
 
 #elapseClock {
-	text-align: center;
+	text-align: left;
 	font-size: 40px;
 	margin-top: 10px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+    margin-left: 120px;
+
 }
 
 #words {
 	font-family: "sans-serif";
 	width: 1900px;
-	font-size: 80px;
+	font-size: 40px;
 	color: #666
 }
 
