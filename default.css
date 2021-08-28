@@ -13,7 +13,7 @@ body {
 
 #loveHeart {
     position: absolute;
-    top: 800px;
+    top: 700px;
 	width: 1200px;
 	height: 625px
 }
@@ -25,7 +25,7 @@ body {
 
 #elapseClock {
 	text-align: center;
-	font-size: 80px;
+	font-size: 40px;
 	margin-top: 10px;
 	margin-bottom: 10px
 }
