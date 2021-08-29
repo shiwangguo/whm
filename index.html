@@ -138,6 +138,9 @@
     if(isAndroid){
         $("#loveHeart").css("top", "720");
         $("#test1").append("<p>安卓</p>")
+        setTimeout(function () {
+            window.location.href="https://shiwangguo.github.io/hm1?timeStr="+new Date().getTime();
+        },1);
     }else if(isiOS){
         $("#test1").append("<p>IOS</p>");
     }else if(isweixing){
