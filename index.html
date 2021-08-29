@@ -8,9 +8,6 @@
             font-family: digit;
             src: url('digital-7_mono.ttf') format("truetype");
         }
-        *{
-            -webkit-text-size-adjust: none;
-        }
     </style>
     <link href="default.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="jquery.js"></script>
@@ -58,6 +55,9 @@
                     <div id="elapseClock" > </div>
                 </div>
             </div>
+        </div>
+        <div id="test1">
+            ------------------
         </div>
     </div>
 </div>
@@ -129,9 +129,16 @@
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
     //判断是否是微信
     var ua = window.navigator.userAgent.toLowerCase();
-    ua.match(/MicroMessenger/i) == 'micromessenger';
+    var isweixing=ua.match(/MicroMessenger/i) == 'micromessenger';
     if(isAndroid){
         $("#loveHeart").css("top", "720");
+        $("#test1").append("<p>安卓</p>")
+    }else if(isiOS){
+        $("#test1").append("<p>IOS</p>");
+    }else if(isweixing){
+        $("#test1").append("<p>微信</p>");
+    }else{
+        $("#test1").append("<p>其他</p>");
     }
 </script>
 </body>
