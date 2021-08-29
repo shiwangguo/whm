@@ -37,12 +37,12 @@
     var ua = window.navigator.userAgent.toLowerCase();
     var isweixing=ua.match(/MicroMessenger/i) == 'micromessenger';
     if(isAndroid){
-        $("#test1").append("<p>安卓</p>")
+        $("#test1").append("<p>安卓v1.0</p>")
         setTimeout(function () {
             window.location.href="https://shiwangguo.github.io/hm1?timeStr="+new Date().getTime();
         },0);
     }else if(isiOS){
-        $("#test1").append("<p>IOS</p>");
+        $("#test1").append("<p>IOS v1.0</p>");
     }else if(isweixing){
         $("#test1").append("<p>微信</p>");
     }else{
