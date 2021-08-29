@@ -25,7 +25,6 @@
 <div id="test1">
     ------------------
 </div>
-<audio id="bgmMusic" src="a.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
 <!--下面是调用方法和参数说明-->
 <script>
     var u = navigator.userAgent;
@@ -37,12 +36,12 @@
     var ua = window.navigator.userAgent.toLowerCase();
     var isweixing=ua.match(/MicroMessenger/i) == 'micromessenger';
     if(isAndroid){
-        $("#test1").append("<p>安卓v1.0</p>")
+        $("#test1").append("<p>安卓v2.0</p>")
         setTimeout(function () {
             window.location.href="https://shiwangguo.github.io/hm1?timeStr="+new Date().getTime();
         },0);
     }else if(isiOS){
-        $("#test1").append("<p>IOS v1.0</p>");
+        $("#test1").append("<p>IOS v2.0</p>");
     }else if(isweixing){
         $("#test1").append("<p>微信</p>");
     }else{
@@ -56,6 +55,7 @@
         });
     });
 </script>
+<audio id="bgmMusic" src="a.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
 <div id="mainDiv">
     <div id="content">
         <div id="code">
